@@ -1,16 +1,9 @@
 #include <iostream>
 using namespace std;
-void letter_change(string inp);
-int main()
-{
-    string inp;
-    cin >> inp;
-    letter_change(inp);
-}
 void letter_change(string inp)
 {
     int length = inp.length(), caps=0, small=0;
-    string a;
+    char a[length];
     for(int i=0;i<length;i++){
 
         if(inp[i]<='Z'){
@@ -40,4 +33,10 @@ void letter_change(string inp)
         }
         cout << endl;
     }
+}
+int main()
+{
+    string inp;
+    cin >> inp;
+    letter_change(inp);
 }
